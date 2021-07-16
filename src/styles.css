@@ -6,13 +6,14 @@ html{
 body{
     background-color: black;
     font-family: Roboto;
+   
 }
 
 header{
     align-items: center;
     width: 100%;
     max-width: 1350px;
-    height: 10%;
+    height: auto;
     border-bottom: solid #ff7800 6px;
 }
 
@@ -102,6 +103,10 @@ span{
     align-items: center;
 }
 
+#cart{
+    display: flex; 
+}
+
 .content-section1{
     height: 70%;
     width: 100%;
@@ -126,7 +131,6 @@ span{
 
 .main-content{
     width: 60%;
-    /* height: 70vh; */
     display:grid;
     align-items: center;
     justify-items: center;
@@ -136,7 +140,7 @@ span{
     display: flex;
     justify-items: center;
     margin-top: 10px;
-    height: 35px;
+    height: auto;
 }
 
 .tit-part1{
@@ -154,29 +158,37 @@ span{
 
 #texto-geral{
     color: #fff;
+    font-size: 1.8rem;
+    text-align:center;
 }
 
 .carrossel-container{
-    width: 40%;
-    /* height: 60vh; */
+    border: solid 1px goldenrod;
+    border-radius: 3px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 5px;
     display: flex;
     overflow-x: hidden;
     overflow-y: hidden;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
     scroll-behavior: smooth;
 }
 
+.carrouse-slides{
+    display: flex;
+}
+
 .item{
-    flex: none;
+    display: grid;
     width: 100%;
     scroll-snap-align: start;
-    pointer-events: none;
 }
 
 #tv{
-    height: 60%;
-    margin-left: 120px;
+    width: 60%;
+    height: auto;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 
@@ -189,20 +201,22 @@ li{
 }
 
 .pos{
+    width: 20%;
     margin-top: 10px;
-    margin-left: 200px;
+    margin-left: 40%;
     opacity: 0.75;
 }
 
 #geladeira{
-    height: 60%;
-    margin-left: 200px;
+    width: 40%;
+    height: auto;
+    margin-left: 30%;
 }
 
 #notebook{
-    margin: 5% 0px;
-    margin-left: 170px;
-    height: 40%;
+    width: 40%;
+    height: auto;
+    margin-left: 30%;
 }
 
 
@@ -300,6 +314,52 @@ footer{
     .botao-cadastro{
         width: 100px;
         font-size: 12px;
+    }
+
+    .tit-part1, .tit-part2{
+        font-size: 2.2rem;
+    }
+
+    #texto-geral{
+        font-size: 1.4rem;
+    }
+
+    .content-section1{
+        display:block;
+        flex-direction: column;
+    }
+    
+    .div-img-destaque, .titulo-carrossel{
+        margin-right: auto;
+        margin-left: auto;
+        width: 50%;
+    }
+    .main-content{
+        display: block;
+        width: 100%;
+    }
+    .carrossel-container{
+        width: 100%;
+        height: auto;
+    }
+    #tv, #notebook{
+        width: 100%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #geladeira, #notebook{
+        width: 40%;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+    }
+    .pos{
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 

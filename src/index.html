@@ -7,6 +7,7 @@
     <title>BlackFriday_.Eletro></title>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
@@ -45,26 +46,34 @@
                 </div>
                 <p id="texto-geral">Confira alguns produtos já disponíveis em nosso site:</p>
                 <div class="carrossel-container">
-                    <div id="item1" class="item">
-                        <img src="./images/TV_Prod1.png" alt="Televisão" id="tv">
-                        <li>TV Samsung Modelo X</li>
-                        <li style="text-decoration: line-through;color: red;">De R$ 3.599,99</li>
-                        <li style="color:green">Por R$ 2.499,99</li>
-                        <img src="./images/carroussel_pos1.svg" alt="Posição 1 carrossel" class="pos">
+                    <div id="previous" class="chevron">
+                        <input type="image" src="./images/previous.svg" alt="Botão imagem anterior" />
                     </div>
-                    <div id="item2" class="item">
-                        <img src="./images/geladeira.png" alt="Geladeira" id="geladeira">
-                        <li>Geladeira Brastemp Y</li>
-                        <li style="text-decoration: line-through;color: red;">De R$ 5.000,00</li>
-                        <li style="color:green">Por R$ 3.499,99</li>
-                        <img src="./images/carroussel_pos2.svg" alt="Posição 2 carrossel" class="pos">
+                    <div class="carrouse-slides">
+                        <div id="item1" class="item">
+                            <img src="./images/TV_Prod1.png" alt="Televisão" id="tv">
+                            <li>TV Samsung Modelo X</li>
+                            <li style="text-decoration: line-through;color: red;">De R$ 3.599,99</li>
+                            <li style="color:green">Por R$ 2.499,99</li>
+                            <img src="./images/carroussel_pos1.svg" alt="Posição 1 carrossel" class="pos">
+                        </div>
+                        <div id="item2" class="item">
+                            <img src="./images/geladeira.png" alt="Geladeira" id="geladeira">
+                            <li>Geladeira Brastemp Y</li>
+                            <li style="text-decoration: line-through;color: red;">De R$ 5.000,00</li>
+                            <li style="color:green">Por R$ 3.499,99</li>
+                            <img src="./images/carroussel_pos2.svg" alt="Posição 2 carrossel" class="pos">
+                        </div>
+                        <div id="item3" class="item">
+                            <img src="./images/notebook.png" alt="Notebook" id="notebook">
+                            <li>Notebook Dell Z</li>
+                            <li style="text-decoration: line-through;color: red;">De R$ 5.799,99</li>
+                            <li style="color:green">Por R$4.399,99</li>
+                            <img src="./images/carroussel_pos3.svg" alt="Posição 3 carrossel" class="pos">
+                        </div>
                     </div>
-                    <div id="item3" class="item">
-                        <img src="./images/notebook.png" alt="Notebook" id="notebook">
-                        <li>Notebook Dell Z</li>
-                        <li style="text-decoration: line-through;color: red;">De R$ 5.799,99</li>
-                        <li style="color:green">Por R$4.399,99</li>
-                        <img src="./images/carroussel_pos3.svg" alt="Posição 3 carrossel" class="pos">
+                    <div id="next" class="chevron">
+                        <input type="image" src="./images/next.svg" alt="Botão proxima imagem" />
                     </div>
                 </div>
             </div>
@@ -91,5 +100,6 @@
         <p id="text-foooter">By Sérgio Fleury - Hiring Coders</p>
     </footer>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
 <script src="./script.js"></script>
 </html>

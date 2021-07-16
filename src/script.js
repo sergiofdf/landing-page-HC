@@ -1,12 +1,17 @@
-//Controle do carrossel pelo scroll do mouse
-const carrossel = document.querySelector(".carrossel-container")
-carrossel.addEventListener("wheel", event =>{
-    if(event.deltaY > 0){
-        event.target.scrollBy(300,0)
-    }else{
-        event.target.scrollBy(-300,0)
-    }
+//Controle carrossel
+const carrossel = document.querySelector('.carrouse-slides')
+new Glider(carrossel,{
+    slidesToShow:1,
+    slidesToScroll:1,
+    draggable:true,
+    arrows:{
+        prev: '#previous',
+        next:'#next'
+    },
+    scrollLock: true
 })
+
+
 
 
 //registro de email preenchido no localstorage
