@@ -1,0 +1,245 @@
+body{
+    background-color: black;
+    font-family: Roboto;
+}
+
+header{
+    width: 98vw;
+    height: 15vh;
+    border-bottom: solid #ff7800 6px;
+}
+
+.content-header{
+    width: 98vw;
+    height: 15vh;
+}
+
+a{
+    color:white;
+    text-decoration: none;
+}
+
+a:hover{
+    color:blue;
+}
+
+.logo{
+    border-radius: 10px;
+    height: 95%;
+}
+
+.div-menu-header{
+    cursor: pointer;
+    width: 32px;
+}
+
+span{
+    position: relative;
+    display:block;
+    height: 4px;
+    width: 100%;
+    background: #d3531a;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    cursor:pointer;
+    margin:5px;
+}
+
+.menu-header{
+    color:#fff;
+    margin:5px;
+    font-size: 20px;
+}
+
+.content-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.div-busca{
+    display: flex;
+    align-items: top;
+}
+
+.busca{
+    border-radius: 10px;
+    font-size: 14px;
+    text-align: center;
+    width: 400px;
+    height: 25px;
+    border: gray solid 2px;
+}
+
+.botao-busca{
+    border-radius: 0 30px 30px 0;
+    font-size: 15px;
+    text-align: center;
+    height: 26px;
+    border: gray solid 2px;
+    background-color: orangered;
+}
+
+.login{
+    display: flex;
+    align-items: center;
+}
+
+.menu{
+    background-color:#2A2928;
+    padding: 0 20px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content-section1{
+    height: 70vh;
+    width: 98vw;
+    display: flex;
+    background-image: url(./images/bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+}
+
+.div-img-destaque{
+    height: 98%;
+    width: 40vw;
+    display: grid;
+    place-items: center;
+}
+
+.imagem-destaque{
+    width: 98%;
+    height: 80%;
+}
+
+.main-content{
+    width: 60vw;
+    height: 70vh;
+    display:grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.titulo-carrossel{
+    display: flex;
+    justify-items: center;
+    margin-top: 10px;
+    height: 35px;
+}
+
+.tit-part1{
+    color:#fff;
+    font-size: 30px;
+    margin: 0;
+}
+
+.tit-part2{
+    color:goldenrod;
+    font-size: 30px;
+    margin: 0;
+    margin-left: 15px;
+}
+
+#texto-geral{
+    color: #fff;
+}
+
+.carrossel-container{
+    width: 40vw;
+    height: 60vh;
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+}
+
+.item{
+    flex: none;
+    width: 100%;
+    scroll-snap-align: start;
+    pointer-events: none;
+}
+
+#tv{
+    height: 60%;
+    margin-left: 120px;
+}
+
+
+li{
+    color: #fff;
+    font-size: 20px;
+    display: list-item;
+    list-style: none;
+    text-align:center;
+}
+
+.pos{
+    margin-top: 10px;
+    margin-left: 200px;
+    opacity: 0.75;
+}
+
+#geladeira{
+    height: 60%;
+    margin-left: 200px;
+}
+
+#notebook{
+    margin: 5% 0px;
+    margin-left: 170px;
+    height: 40%;
+}
+
+
+.cadastro form{
+    height: 10vh;
+    background-color: #d88134e7;
+    display: flex;
+    align-items: center;
+}
+
+.texto_site{
+    margin: 0 20px;
+    color: #fff;
+    font-size: 18px;
+    font-family: Roboto;
+}
+
+#email{
+    margin-right: 10px;
+    width: 300px;
+    height: 30px;
+    font-size: 16px;
+    padding: 3px;
+}
+
+.botao-cadastro{
+    color:#fff;
+    background-color: #2A2928;
+    border-radius: 5px;
+    font-size: 25px;
+    width: 150px;
+    height: 40px;
+}
+
+.icone{
+    align-items:center;
+    transform: translate(32vw,0);
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+footer{
+    color: white;
+    font-family: cursive;
+    font-size: 12px;
+    text-align: end;
+}
