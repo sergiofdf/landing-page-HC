@@ -1,22 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+html{
+    font-size: 62.5%; /* a cada 1rem será considerado 10px */
+}
+
 body{
     background-color: black;
     font-family: Roboto;
 }
 
 header{
-    width: 98vw;
-    height: 15vh;
+    align-items: center;
+    width: 100%;
+    max-width: 1350px;
+    height: 10%;
     border-bottom: solid #ff7800 6px;
 }
 
 .content-header{
-    width: 98vw;
-    height: 15vh;
+    width: 100%;
+    max-width: 1350px;
+    height: 10%;
 }
 
 a{
     color:white;
     text-decoration: none;
+    font-size: 1.6rem;
 }
 
 a:hover{
@@ -24,11 +33,15 @@ a:hover{
 }
 
 .logo{
-    border-radius: 10px;
-    height: 95%;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 240px;
+    height: 80%;
+    max-height: 100px;
 }
 
 .div-menu-header{
+    display: none;
     cursor: pointer;
     width: 32px;
 }
@@ -49,7 +62,7 @@ span{
 .menu-header{
     color:#fff;
     margin:5px;
-    font-size: 20px;
+    font-size: 2rem;
 }
 
 .content-header{
@@ -61,20 +74,23 @@ span{
 .div-busca{
     display: flex;
     align-items: top;
+    width: 40%;
+    max-width: 300px;
+
 }
 
 .busca{
     border-radius: 10px;
-    font-size: 14px;
+    font-size: 1.4rem;
     text-align: center;
-    width: 400px;
+    width: 100%;
     height: 25px;
     border: gray solid 2px;
 }
 
 .botao-busca{
     border-radius: 0 30px 30px 0;
-    font-size: 15px;
+    font-size: 1.5rem;
     text-align: center;
     height: 26px;
     border: gray solid 2px;
@@ -86,18 +102,9 @@ span{
     align-items: center;
 }
 
-.menu{
-    background-color:#2A2928;
-    padding: 0 20px;
-    height: 55px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
 .content-section1{
-    height: 70vh;
-    width: 98vw;
+    height: 70%;
+    width: 100%;
     display: flex;
     background-image: url(./images/bg1.jpg);
     background-repeat: no-repeat;
@@ -106,20 +113,20 @@ span{
 }
 
 .div-img-destaque{
-    height: 98%;
-    width: 40vw;
+    /* height: 98%; */
+    width: 40%;
     display: grid;
     place-items: center;
 }
 
 .imagem-destaque{
-    width: 98%;
-    height: 80%;
+    width: 100%;
+    height:auto;
 }
 
 .main-content{
-    width: 60vw;
-    height: 70vh;
+    width: 60%;
+    /* height: 70vh; */
     display:grid;
     align-items: center;
     justify-items: center;
@@ -134,13 +141,13 @@ span{
 
 .tit-part1{
     color:#fff;
-    font-size: 30px;
+    font-size: 3rem;
     margin: 0;
 }
 
 .tit-part2{
     color:goldenrod;
-    font-size: 30px;
+    font-size: 3rem;
     margin: 0;
     margin-left: 15px;
 }
@@ -150,8 +157,8 @@ span{
 }
 
 .carrossel-container{
-    width: 40vw;
-    height: 60vh;
+    width: 40%;
+    /* height: 60vh; */
     display: flex;
     overflow-x: hidden;
     overflow-y: hidden;
@@ -175,7 +182,7 @@ span{
 
 li{
     color: #fff;
-    font-size: 20px;
+    font-size: 2rem;
     display: list-item;
     list-style: none;
     text-align:center;
@@ -199,47 +206,101 @@ li{
 }
 
 
-.cadastro form{
-    height: 10vh;
+.cadastro {
+    display: block;
+}
+
+#form{
+    width: 100%;
+    max-width: 1350px;
+    height: 60px;
     background-color: #d88134e7;
+    padding: 0 0 0 20px;
     display: flex;
     align-items: center;
 }
 
 .texto_site{
-    margin: 0 20px;
+    margin:0;
+    width: 100%;
+    max-width: 1350px;
+    padding: 5px 0 0 20px;
     color: #fff;
-    font-size: 18px;
+    background-color: #d88134e7;
+    font-size: 1.8rem;
     font-family: Roboto;
 }
 
 #email{
     margin-right: 10px;
+    border-radius: 8px;
     width: 300px;
     height: 30px;
-    font-size: 16px;
+    font-size: 1.6rem;
     padding: 3px;
 }
 
 .botao-cadastro{
     color:#fff;
     background-color: #2A2928;
-    border-radius: 5px;
-    font-size: 25px;
+    border-radius: 8px;
+    font-size: 2.5rem;
     width: 150px;
     height: 40px;
 }
 
+
+footer{
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    text-align: end;
+}
+
 .icone{
     align-items:center;
-    transform: translate(32vw,0);
     cursor: pointer;
     margin: 0 5px;
 }
 
-footer{
-    color: white;
-    font-family: cursive;
-    font-size: 12px;
-    text-align: end;
+@media (max-width: 850px){
+    html{
+        font-size: 50%;
+    }
+
 }
+
+@media (max-width: 730px){
+
+    .div-menu-header{
+        display: block;
+        margin-right: 30px;
+    }
+    
+    .div-busca{
+        display: none
+    }
+    
+    .login{
+        display: none;
+    }
+    
+    #cart{
+        display: none; 
+    }
+}
+
+@media (max-width: 500px){
+    #email{
+        width: 150px;
+    }
+    .botao-cadastro{
+        width: 100px;
+        font-size: 12px;
+    }
+}
+
+
